@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title></title>
+</head>
+
+<body>
+	<img
+		style="position: absolute; top: 0.61in; left: 0.76in; width: 1.02in; height: 0.92in"
+		src="../static/images/ri_1.png" />
+	<div
+		style="position: absolute; top: 0.48in; left: 3.05in; width: 1.93in; line-height: 0.19in;">
+		<table>
+			<tbody>
+				<tr th:each="actInfo, rowStat: ${actInfoList}">
+					<td><span
+						style="font-style: normal; font-weight: normal; font-size: 10pt; font-family: DINNextRoundedLTPro-Light; color: #000000"
+						th:text="${actInfo.key}">NA</span> <span
+						style="font-style: normal; font-weight: bold; font-size: 10pt; font-family: DINNextRoundedLTPro-Bold; color: #000000"
+						th:text="${actInfo.value}">NA</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<img
+		style="position: absolute; top: 0.00in; left: 7.11in; width: 1.88in; height: 1.82in"
+		src="../static/images/ri_2.png" />
+
+	<img
+		style="position: absolute; top: 2.62in; left: 0.77in; width: 1.90in; height: 0.38in"
+		src="../static/images/ri_3.png" />
+	<img
+		style="position: absolute; top: 2.62in; left: 2.73in; width: 1.90in; height: 0.38in"
+		src="../static/images/ri_4.png" />
+	<img
+		style="position: absolute; top: 2.62in; left: 4.69in; width: 1.90in; height: 0.38in"
+		src="../static/images/ri_5.png" />
+	<img
+		style="position: absolute; top: 2.62in; left: 6.65in; width: 1.90in; height: 0.38in"
+		src="../static/images/ri_6.png" />
+
+
+	<div style="position: absolute; top: 3in; left: 0.77in">
+		<table>
+			<tbody>
+				<tr th:each="statntInfo : ${statntInfoList}">
+
+					<td
+						style="position: normal; word-break: break-all; width: 2in; height: 0.38in; text-align: center"><span
+						style="font-style: normal; font-weight: normal; font-size: 8pt; font-family: DINNextRoundedLTPro-Light; color: #000000"
+						th:text="${statntInfo.date}">14/03/2018</span></td>
+					<td
+						style="position: normal; word-break: break-all; width: 1.70in; height: 0.38in; text-align: left"><span
+						style="font-style: normal; font-weight: normal; font-size: 8pt; font-family: DINNextRoundedLTPro-Light; color: #000000"
+						th:text="${statntInfo.description}">NANANANANANANANANANANANANANANANANANANANANANANANANANANANA</span></td>
+					<td
+						style="position: normal; word-break: break-all; width: 1.80in; height: 0.38in; text-align: right"><span
+						style="font-style: normal; font-weight: normal; font-size: 8pt; font-family: DINNextRoundedLTPro-Light; color: #000000"
+						th:text="${statntInfo.amount}">+2000</span></td>
+					<td
+						style="position: normal; word-break: break-all; width: 2in; height: 0.38in; text-align: right"><span
+						style="font-style: normal; font-weight: normal; font-size: 8pt; font-family: DINNextRoundedLTPro-Light; color: #000000"
+						th:text="${statntInfo.balance}">2000000000</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<img
+		style="position: absolute; top: 11.78in; left: 0.54in; width: 7.93in; height: 0.01in"
+		src="../static/images/vi_1.png" />
+	<div
+		style="position: absolute; top: 11.79in; left: 0.55in; width: 7.91in; line-height: 0.14in;">
+		<span
+			style="font-style: normal; font-weight: normal; font-size: 8pt; font-family: DINNextRoundedLTPro-Light; color: #000000"
+			th:text="${STA_FOOTER_TEXT1}">NA</span><span
+			style="font-style: normal; font-weight: normal; font-size: 8pt; font-family: DINNextRoundedLTPro-Light; color: #000000">
+		</span><br /> <span
+			style="font-style: normal; font-weight: normal; font-size: 8pt; font-family: DINNextRoundedLTPro-Light; color: #000000"
+			th:text="${STA_FOOTER_TEXT2}">NA</span><span
+			style="font-style: normal; font-weight: normal; font-size: 8pt; font-family: DINNextRoundedLTPro-Light; color: #000000">
+		</span><br />
+	</div>
+	<div
+		style="position: absolute; top: 12.04in; left: 5.96in; width: 2.54in; line-height: 0.15in;">
+		<span
+			style="font-style: normal; font-weight: normal; font-size: 8pt; font-family: DINNextRoundedLTPro-Light; color: #000000"
+			th:text="${STATEMENT_SERVER_TIME_TEXT}">This datatat is
+			generated on 02.01.2019 22:01</span><br />
+	</div>
+</body>
+</html>
