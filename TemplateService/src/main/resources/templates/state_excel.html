@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title></title>
+</head>
+
+<body>
+	<div style="position: absolute; top: 0.48in">
+		<table>
+			<tbody>
+				<tr th:each="actInfo : ${actInfoList}">
+					<td><span
+						style="font-style: normal; font-weight: normal; font-size: 10pt; font-family: DINNextRoundedLTPro-Light; color: #000000"
+						th:text="${actInfo.key}">NANANANA</span></td>
+					<td><span
+						style="font-style: normal; font-weight: bold; font-size: 10pt; font-family: DINNextRoundedLTPro-Bold; color: #000000"
+						th:text="${actInfo.value}">NANANANANA</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div style="position: absolute; top: 2.1in">
+		<table>
+			<tbody>
+				<tr th:each="statntInfo : ${statntInfoList}">
+
+					<td><span
+						style="font-style: normal; font-weight: normal; font-size: 8pt; font-family: DINNextRoundedLTPro-Light; color: #000000"
+						th:text="${statntInfo.date}">14/03/2018</span></td>
+					<td><span
+						style="font-style: normal; font-weight: normal; font-size: 8pt; font-family: DINNextRoundedLTPro-Light; color: #000000"
+						th:text="${statntInfo.description}">NANANANANANANANANANANANANANANANANANANANANANANANANANANANA</span></td>
+					<td><span
+						style="font-style: normal; font-weight: normal; font-size: 8pt; font-family: DINNextRoundedLTPro-Light; color: #000000"
+						th:text="${statntInfo.amount}">+2000</span></td>
+					<td><span
+						style="font-style: normal; font-weight: normal; font-size: 8pt; font-family: DINNextRoundedLTPro-Light; color: #000000"
+						th:text="${statntInfo.balance}">2000000000</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
